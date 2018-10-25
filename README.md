@@ -1,2 +1,2 @@
-# Web-Design-Development 
-# Web-Design-Development-Laboratory-Tasks
+# Web Design & Development 
+WDD Lab Tasks
