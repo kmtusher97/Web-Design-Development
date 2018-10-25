@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using the Window Object</title>
+    <script src="Assets/Javascript/MyScripts/scripts.js"></script>
+
+</head>
+<body>
+    <h1>Hello, this is the main window</h1>
+    <p>
+        Please check the features to enable for the child window<br/>
+        <input id="toolBarCheckBox" type="checkbox" value="" checked="checked" />
+        <label>Tool Bar</label>
+        <input id="menuBarCheckBox" type="checkbox" value="" checked="checked" />
+        <label>Menu Bar</label>
+        <input id="scrollBarCheckBox" type="checkbox" value="" checked="checked" />
+        <label>Scroll Bar</label>
+    </p>
+
+    <p>
+        Please enter the text that you would like to display in the child window<br/>
+        <input id="textForChild" type="text" value="<h1>Hello, I am a child window</h1>" />
+        <input id="createButton" type="button" value="Create Child Window" onclick="createChildWindow();" />
+        <input id="modifyButton" type="button" value="Modify Child Window" onclick="modifyChildWindow();" disabled="disabled" />
+        <input id="closeButton" type="button" value="Close Child Window" onclick="closeChildWindow();" disabled="disabled" />
+    </p>
+
+    <p>
+        The other window's URL is: <br/>
+        <input id="myChildURL" type="text" value="./" />
+        <input id="setURLButton" type="button" value="Set Child URL" onclick="setChildWindowURL();" disabled="disabled" />
+    </p>
+</body>
+</html>
