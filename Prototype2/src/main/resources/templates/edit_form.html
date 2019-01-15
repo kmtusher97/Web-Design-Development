@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Form</title>
+</head>
+<body>
+
+  <div>
+    <form th:action="@{/save}" method="post" th:object="${studentForm}">
+      <div>
+        <label for="roll">Roll</label>
+        <input type="text" class="" id="roll" th:field="*{roll}">
+      </div>
+      <br>
+
+      <div>
+        <label for="name">Name</label>
+        <input type="text" class="" id="name" th:field="*{name}">
+      </div>
+      <br>
+
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

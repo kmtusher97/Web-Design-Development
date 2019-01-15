@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Info Table</title>
+</head>
+<body>
+
+  <h1>Student Info</h1>
+
+  <table border="1">
+    <thead>
+    <th>Roll</th>
+    <th>Name</th>
+    <th>Action</th>
+    </thead>
+
+    <tbody>
+    <tr th:each="stlist:${studentlist}">
+      <td th:text="${{stlist.roll}}"></td>
+      <td th:text="${{stlist.name}}"></td>
+      <td>
+        <a th:href="@{/update/{roll} (roll=${stlist.roll})}" role="button">Update</a>
+        <a th:href="@{/delete/{roll} (roll=${stlist.roll})}" role="button">Delete</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <a th:href="@{/insert}" role="button">Add Student</a>
+
+</body>
+</html>
